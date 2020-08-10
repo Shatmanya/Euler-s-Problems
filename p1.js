@@ -7,12 +7,13 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 */
 
 function sum(){
-  let Total=0;
-  for(var i=0;i<=1000;i++){
-    if(i%3===0|| i%5===0){
-      Total+=i;
+  var total = 0;
+
+for(var i = 0; i < 1000; i++) {
+  if(i % 3 == 0 || i % 5 == 0) {
+    total += i;
     }
   }
-  return Total;
+  return total;
 }
 console.log("Sum of all the multiples if 3 or 5 below 1000 is "+sum());
